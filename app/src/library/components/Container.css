@@ -1,0 +1,19 @@
+.container-comp {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.container-border {
+    background-color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--grey-200)
+}
+
+.container-shadow {
+    background-color: var(--white);
+    border-radius: 12px;
+}

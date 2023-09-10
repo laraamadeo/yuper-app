@@ -1,0 +1,55 @@
+.tabbar-container-ios {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    padding: 16px 24px 40px 24px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.tabbar-container {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    padding: 16px 24px 24px 24px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    background-color: var(--white);
+    box-sizing: border-box;
+    box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.02);
+}
+
+.tabbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tabbar-selected {
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 44px;
+}
+
+.tabbar-item-notification-badge {
+    width: 8px;
+    height: 8px;
+    background-color: var(--red-200);
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -4px;
+}
+
+.filled-icon {
+    stroke-width: 2.5;
+}

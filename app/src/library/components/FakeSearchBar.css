@@ -1,0 +1,10 @@
+.searchBar-fake-container {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid var(--grey-200);
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 12px;
+}

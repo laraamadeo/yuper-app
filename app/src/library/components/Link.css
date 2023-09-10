@@ -1,0 +1,12 @@
+.link-compo-container {
+    display: flex;
+    gap: 8px;
+}
+
+.link-default {
+    color: var(--grey-700);
+}
+
+.link-critical {
+    color: var(--critical-color);
+}

@@ -1,0 +1,21 @@
+.illustration-gif {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.empty-state-img-container {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.empty-state-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}

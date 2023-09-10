@@ -1,0 +1,51 @@
+.topbar-container {
+    width: 100vw;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: #FFFFFF;
+    z-index: 50;
+    top: 0;
+}
+
+.topbar-label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px;
+}
+
+.topbar-label-icon-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 32px;
+}
+
+.topbar-label-icon-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.topbarFirst-label-icon-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar-logo {
+    width: 32px;
+    height: 32px;
+}

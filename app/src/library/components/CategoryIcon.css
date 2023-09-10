@@ -1,0 +1,24 @@
+.category-icon-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.category-vegetarian {
+    background-color: #E9FCD9;
+}
+
+.category-vegan {
+    background-color: #F2F5F7;
+}
+
+.category-gluten {
+    background-color: #FFF6D4;
+}
+
+.category-alergen {
+    background-color: #E6D4C3;
+}

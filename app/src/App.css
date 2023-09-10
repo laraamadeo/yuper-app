@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+}
+
+.time-picker-container {
+    display: flex;
+    padding: 12px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--grey-200);
+    width: auto;
+}

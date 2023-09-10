@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --grey-700: #3b3b3f;
+  --grey-600: #434343;
+  --grey-500: #696969;
+  --grey-400: #8F8F8F;
+  --grey-300: #B4B4B4;
+  --grey-200: #DADADA;
+  --grey-100: #F4F4F4;
+  --white: #FFFFFF;
+
+  --primary-color: #FFC938;
+  --primary-hover: #FFD566;
+  --secondary-color: #F3EBD8;
+  --secondary-hover: #F4E5BE;
+  --critical-color: #E75955;
+  --critical-hover: #E4706C;
+
+  --green-100: #EDF7ED;
+  --green-200: #4CAF50;
+  --yellow-100: #FFF4E5;
+  --yellow-200: #FF9800;
+  --red-100: #FDECEA;
+  --red-200: #F44336;
+  --blue-100: #EAF8FD;
+  --blue-200: #15B2EB;
+
+  --bg-green: #E9FCD9;
+  --bg-yellow: #FFF6D4;
+  --bg-grey: #F2F5F7;
+  --bg-red: #FEDFDE;
+
+  --elevation-1: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+  --elevation-2: 0px 4px 8px -2px rgba(0, 0, 0, 0.20);
+  --elevation-3: 0px 8px 16px -4px rgba(0, 0, 0, 0.15);
+  --elevation-4: 0px 12px 24px -4px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: start center;
+}
+
+.root {
+  width: 100%;
+  margin: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  padding-bottom: 34px;
+  overscroll-behavior-y: contain;
+  height: 100%;
+}
+
+.page-first-level {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 64px;
+  box-sizing: border-box;
+  padding-bottom: 90px;
+  height: 100%;
+}
+
+.page-no-token {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-button-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding-top: 64px;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.icon-xs {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.icon-s {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.6;
+}
+
+.icon-m {
+  width: 32px;
+  height: 32px;
+  stroke-width: 1.8;
+}
+
+
+.body-text {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.body-text-bold {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.medium-text {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.medium-text-bold {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.small-text {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.small-text-bold {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tiny-text {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.tiny-text-bold {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.heading-s {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.heading-l {
+  font-size: 32px;
+  font-family: "Inter";
+  font-weight: 600;
+  margin: 0;
+}
+
+
+.title {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  height: fit-content;
+  margin: 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.grey-700 {
+  color: #3b3b3f
+}
+
+.grey-600 {
+  color: #434343
+}
+
+.grey-500 {
+  color: #696969
+}
+
+.grey-400 {
+  color: #8F8F8F
+}
+
+.grey-300 {
+  color: #B4B4B4
+}
+
+.grey-200 {
+  color: #DADADA
+}
+
+.grey-100 {
+  color: #F4F4F4
+}
+
+.white {
+  color: #FFFFFF
+}
+
+.primary-color {
+  color: #FFC938
+}
+
+.priamary-hover {
+  color: #FFD566
+}
+
+.secondary-color {
+  color: #F3EBD8
+}
+
+.secondary-hover {
+  color: #F4E5BE
+}
+
+.critical-color {
+  color: #E75955
+}
+
+.critical-hover {
+  color: #E4706C
+}
+
+.green-100 {
+  color: #EDF7ED
+}
+
+.green-200 {
+  color: #4CAF50
+}
+
+.yellow-100 {
+  color: #FFF4E5
+}
+
+.yellow-200 {
+  color: #FF9800
+}
+
+.red-100 {
+  color: #FDECEA
+}
+
+.red-200 {
+  color: #F44336
+}
+
+.blue-100 {
+  color: #EAF8FD
+}
+
+.blue-200 {
+  color: #15B2EB
+}
+
+.bg-green {
+  color: #E9FCD9
+}
+
+.bg-yellow {
+  color: #FFF6D4
+}
+
+.bg-grey {
+  color: #F2F5F7
+}
+
+.bg-red {
+  color: #FEDFDE
+}
+
+.elevation-1 {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+}
+
+.elevation-2 {
+  box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.20);
+}
+
+.elevation-3 {
+  box-shadow: 0px 8px 16px -4px rgba(0, 0, 0, 0.15);
+}
+
+.elevation-4 {
+  box-shadow: 0px 12px 24px -4px rgba(0, 0, 0, 0.15);
+}
+
+.pointer {
+  cursor: pointer;
+}

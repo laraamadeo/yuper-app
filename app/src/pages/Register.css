@@ -1,0 +1,60 @@
+.register-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.register-logo-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.register-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.link-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.register-bullet-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+    margin-top: -16px;
+}
+
+.register-bullet-list-row {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.icon-bulletList {
+    min-width: 20px;
+    min-height: 20px;
+}

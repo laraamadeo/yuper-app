@@ -1,0 +1,12 @@
+.search-meal-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.search-meal-categories-pair {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}

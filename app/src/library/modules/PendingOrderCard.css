@@ -1,0 +1,51 @@
+.pending-order-info-n-avatar {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.pending-order-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pending-order-first-row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pending-order-second-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pending-order-third-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pending-order-meal-label {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.pending-order-container {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pending-order-serial {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 40%;
+    overflow: hidden;
+}

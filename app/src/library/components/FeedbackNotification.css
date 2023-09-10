@@ -1,0 +1,22 @@
+.feedbackNotif-container {
+    display: flex;
+    gap: 8px;
+    border-radius: 12px;
+    width: 100%;
+    height: fit-content;
+    padding: 12px;
+}
+
+.feedbackNotif-warning {
+    background-color: var(--bg-yellow);
+    border: 1px solid var(--yellow-200);
+}
+
+.feedbackNotif-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    height: fit-content;
+
+}

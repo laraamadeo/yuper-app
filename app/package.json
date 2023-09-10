@@ -1,0 +1,42 @@
+{
+  "name": "Yupper",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext tsx,ts,js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "autoprefixer": "^10.4.14",
+    "com": "file:../com",
+    "flowbite": "^1.8.1",
+    "flowbite-react": "^0.5.0",
+    "imagekitio-react": "^2.0.0",
+    "postcss": "^8.4.27",
+    "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.3.1",
+    "react-number-format": "^5.2.2",
+    "react-router-dom": "^6.14.1",
+    "react-slick": "^0.29.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-slick": "^0.23.10",
+    "@vite-pwa/assets-generator": "^0.0.8",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "react-ios-pwa-prompt": "^1.8.4",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vite-plugin-pwa": "^0.16.4"
+  }
+}

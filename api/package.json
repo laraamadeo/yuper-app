@@ -1,0 +1,32 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "This api connects Tupper client side with database with different endpoints that are linked to different functionalities",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node --watch .",
+    "start": "node .",
+    "inspect": "node --inspect-brk .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mocha-test": "mocha logic/*.spec.js",
+    "coverage": "nyc --reporter=html --reporter=text mocha logic/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "com": "^0.0.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "imagekit": "^4.1.3",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.2"
+  }
+}

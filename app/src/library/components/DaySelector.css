@@ -1,0 +1,25 @@
+.day-selector-container {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-selector-default {
+    background-color: var(--white);
+    border: 1px solid var(--grey-200);
+}
+
+.day-selector-label-default {
+    color: var(--grey-400);
+}
+
+.day-selector-label-selected {
+    color: var(--grey-700);
+}
+
+.day-selector-selected {
+    background-color: var(--primary-color);
+}

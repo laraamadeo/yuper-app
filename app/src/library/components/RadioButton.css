@@ -1,0 +1,19 @@
+.radio-button-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.radio-button {
+    appearance: none;
+    background-color: var(--secondary-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.radio-button:checked {
+    border: 5px solid var(--secondary-color);
+    background-color: var(--grey-700);
+}

@@ -1,0 +1,22 @@
+.chooseFile-container {
+    width: 100%;
+    height: fit-content;
+    border: 1px dashed var(--grey-400);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.chooseFile-container.empty {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.chooseFile-img {
+    height: 90px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}

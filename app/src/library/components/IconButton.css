@@ -1,0 +1,42 @@
+.icon-button-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.icn-button-primary {
+    background-color: var(--primary-color);
+}
+
+.icn-button-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.icn-button-secondary {
+    background-color: var(--secondary-color);
+}
+
+.icn-button-secondary:hover {
+    background-color: var(--secondary-hover);
+}
+
+
+.icn-button-critical {
+    background-color: var(--critical-color);
+}
+
+.icn-button-critical:hover {
+    background-color: var(--critical-hover);
+}
+
+.icn-button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icn-button-label-critical {
+    color: var(--white);
+}

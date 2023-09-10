@@ -1,0 +1,69 @@
+.payment-item-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.payment-item-author {
+    width: 100%;
+    display: flex;
+    gap: 8px
+}
+
+.payment-item-author-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-item-item-container {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.payment-payment-method {
+    margin-top: 24px;
+}
+
+.payment-divider-section {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin-bottom: 24px;
+}
+
+.payment-total {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.payment-inside-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.payment-card-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.payment-card-details-security-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    gap: 16px;
+}

@@ -1,0 +1,19 @@
+.modal-full-screen-container {
+    width: 100%;
+    height: calc(100vh - 34px);
+    position: absolute;
+    z-index: 100;
+    animation-duration: 0.3s;
+    background-color: var(--white);
+}
+
+.modal-full-screen-content {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.topbar-modals {
+    z-index: 100;
+}

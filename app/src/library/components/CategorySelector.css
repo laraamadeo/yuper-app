@@ -1,0 +1,61 @@
+.category-selector-container {
+    width: 180px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 1px solid var(--grey-200);
+}
+
+.category-selector-vegetarian-selected {
+    border: 2px solid #3C6916;
+}
+
+.category-selector-vegan-selected {
+    border: 2px solid #335C77;
+}
+
+.category-selector-gluten-selected {
+    border: 2px solid #B98A0F;
+}
+
+.category-selector-alergen-selected {
+    border: 2px solid #74685D;
+}
+
+
+.category-selector-vegetarian {
+    background-color: #EFFFE5;
+}
+
+.category-selector-vegan {
+    background-color: #F2F5F7;
+}
+
+.category-selector-gluten {
+    background-color: #FFFAE8;
+}
+
+.category-selector-alergen {
+    background-color: #E6D4C3;
+}
+
+.category-selector-label-vegetarian {
+    color: #3C6916;
+}
+
+.category-selector-label-vegan {
+    color: #335C77;
+}
+
+.category-selector-label-gluten {
+    color: #B98A0F;
+}
+
+.category-selector-label-alergen {
+    color: #74685D;
+}

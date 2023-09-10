@@ -1,0 +1,38 @@
+.additional-container {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 110px;
+}
+
+.additional-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.availability-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.availability-dots-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.additional-form-avatar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

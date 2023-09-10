@@ -1,0 +1,49 @@
+.app-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#4d4d4d, #363535);
+}
+
+.splash-container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s forwards;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: radial-gradient(#4d4d4d, #363535);
+
+}
+
+.splash-container.show {
+    display: flex;
+}
+
+.svg-container {
+    width: 150px;
+    height: 150px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFC938;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

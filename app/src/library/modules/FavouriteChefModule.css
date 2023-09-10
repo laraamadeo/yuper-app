@@ -1,0 +1,33 @@
+.favouriteChefModule-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.favouriteChefModule-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.favouriteChefModule-avatar-info {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.favouriteChefModule-name-description {
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+}
+
+.favouriteChefModule-divider {
+    position: absolute;
+    bottom: 0px;
+}

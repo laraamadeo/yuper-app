@@ -1,0 +1,28 @@
+.pendingToPack-meal-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pendingToPack-meal-info {
+    display: flex;
+    gap: 4px;
+}
+
+.pendingToPack-button-area {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.pendingToPack-chevron-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pendingToPack-pick-n-chip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

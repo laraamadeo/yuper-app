@@ -1,0 +1,64 @@
+.new-meal-upper-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 32px;
+}
+
+.new-meal-images-row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 16px;
+}
+
+.new-meal-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.new-meal-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create-meal-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.create-meal-categories-pair {
+    display: flex;
+    gap: 16px;
+}
+
+.create-meal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.create-meal-categories-label-selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.ik-upload-button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--grey-100);
+    appearance: none;
+}
+
+.-webkit-file-upload-button {
+    display: none;
+}

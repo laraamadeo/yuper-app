@@ -1,0 +1,68 @@
+.meal-card-container {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.meal-card-image-container {
+    width: 100%;
+}
+
+.meal-card-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 16px;
+}
+
+.meal-card-data-title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meal-card-data-description {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.meal-card-image {
+    width: 97px;
+    height: 97px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.meal-card-data-lower {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.meal-card-data-upper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meal-card-data-price {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.meal-card-data-categories {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}

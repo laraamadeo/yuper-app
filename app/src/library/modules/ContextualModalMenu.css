@@ -1,0 +1,14 @@
+.contextualModal-container {
+    background-color: var(--white);
+    width: 100vw;
+    height: fit-content;
+    padding: 36px 16px;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 16px 16px 0px 0px;
+    z-index: 5000;
+}

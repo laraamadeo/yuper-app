@@ -1,0 +1,16 @@
+.empty-photo-container {
+    width: 60px;
+    height: 60px;
+    background-color: var(--grey-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.photo-container {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}

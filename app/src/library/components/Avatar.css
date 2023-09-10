@@ -1,0 +1,12 @@
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.avatar-img {
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+}

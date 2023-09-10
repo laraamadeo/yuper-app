@@ -1,0 +1,13 @@
+.data-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.data-item-label {
+    color: var(--grey-500);
+}
+
+.data-item-content {
+    color: var(--grey-700);
+}

@@ -1,0 +1,69 @@
+.button-container-small {
+    border: none;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-container-extrasmall {
+    border: none;
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    height: fit-content;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-container-medium {
+    border: none;
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.secondary:hover {
+    background-color: var(--secondary-hover);
+}
+
+.critical {
+    background-color: var(--critical-color);
+}
+
+.critical:hover {
+    background-color: var(--critical-hover);
+}
+
+.label {
+    color: var(--grey-700);
+    white-space: nowrap
+}
+
+.label-critical {
+    color: var(--white);
+}

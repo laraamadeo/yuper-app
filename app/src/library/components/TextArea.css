@@ -1,0 +1,27 @@
+.input-field-text-area {
+    display: flex;
+    padding: 12px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid var(--grey-200);
+    width: auto;
+    resize: none;
+}
+
+.input-field-text-area::placeholder {
+    color: var(--grey-300);
+    font-size: 14px;
+}
+
+textarea {
+    font-family: "Inter";
+    font-size: 16px;
+    color: var(--grey-700);
+}
+
+textarea::placeholder {
+    font-family: "Inter";
+    font-size: 16px;
+}
