@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './InstallationDesktopPage.css'
 import ReactCardFlip from 'react-card-flip';
+import { Tooltip } from 'react-tooltip';
 
 
 export default function InstallationDesktopPage(): JSX.Element {
@@ -20,7 +21,7 @@ export default function InstallationDesktopPage(): JSX.Element {
                 </div>
 
                 <div className='insP-left-lower'>
-                    <div className='insP-app-icon-container'>
+                    <div className='insP-app-icon-container' data-tooltip-id="text-tooltip" data-tooltip-content="For developer: You can scan it or just open mobile viewport with Dev Tools 😉">
                         <ReactCardFlip isFlipped={flipped}>
                             <div onClick={() => setFlipped(!flipped)}>
                                 <img src='/other/logo-flip.svg' className='insP-icon'></img>
@@ -44,5 +45,6 @@ export default function InstallationDesktopPage(): JSX.Element {
                 </div>
             </section>
         </main>
+        <Tooltip id="text-tooltip" />
     </>
 }
