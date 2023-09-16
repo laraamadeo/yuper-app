@@ -9,7 +9,7 @@
 
 @media (max-width: 830px) {
     .installationPage-container {
-        grid-gap: 3em;
+        grid-gap: 2em;
     }
 
     .insP-logo {
@@ -23,8 +23,7 @@
 
 .insP-left {
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 32px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
