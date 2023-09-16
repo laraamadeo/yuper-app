@@ -15,7 +15,7 @@ type Props = {
 
 export default function MealCard({ meal: { image, title, description, categories, price }, onclick }: Props) {
     return <>
-        <Container width={'382px'} height={'fit-content'} type={'shadow'} elevation={'1'} onClick={onclick}>
+        <Container width={'100%'} height={'fit-content'} type={'shadow'} elevation={'1'} onClick={onclick}>
             <div className='meal-card-container'>
                 {/* left-side */}
                 <img className='meal-card-image' src={`${image}`}></img>

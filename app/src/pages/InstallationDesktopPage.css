@@ -1,0 +1,86 @@
+.installationPage-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(244, 239, 255, 1) 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+
+}
+
+@media (max-width: 830px) {
+    .installationPage-container {
+        grid-gap: 3em;
+    }
+
+    .insP-logo {
+        margin-bottom: 40px;
+    }
+
+    .insP-right {
+        padding-left: 80px;
+    }
+}
+
+.insP-left {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.insP-left-lower {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.insP-right {
+    width: 100%;
+
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insP-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insP-motto {
+    text-align: center;
+    max-width: 70%;
+}
+
+
+.insP-arrow {
+    display: flex;
+    justify-content: center;
+    max-height: 80px;
+    object-fit: cover;
+}
+
+.insP-screenshots-container {
+    max-width: 100%;
+}
+
+.insP-app-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.insP-icon {
+    cursor: pointer;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+}
