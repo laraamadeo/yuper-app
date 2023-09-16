@@ -3,7 +3,7 @@ import Loader from './library/modules/Loader'
 import './style.css'
 import "./App.css"
 import Context from './Context'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import AdditionalInfo from './modals/AdditionalInfo'
@@ -16,10 +16,13 @@ import MealDetails from './pages/MealDetails'
 import Toast from './library/components/Toast'
 import Cart from './pages/Cart'
 import Search from './pages/Search'
-//@ts-ignore
-import PWAPrompt from 'react-ios-pwa-prompt'
-import getMobileOperatingSystem from './logic/helpers/getMobileOperatingSystem'
 import FavouriteChefs from './pages/FavouriteChefs'
+//@ts-ignore
+// import PWAPrompt from 'react-ios-pwa-prompt'
+import getMobileOperatingSystem from './logic/helpers/getMobileOperatingSystem'
+import getCurrentViewport from './logic/helpers/getCurrentViewport'
+import InstallationDesktopPage from './pages/InstallationDesktopPage'
+
 
 
 type ToastProperties = {
@@ -35,6 +38,19 @@ function App() {
   const navigate = useNavigate()
 
   getMobileOperatingSystem()
+
+  const [screenSize, setScreenSize] = useState(getCurrentViewport())
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentViewport())
+    }
+    window.addEventListener('resize', updateDimension);
+
+    return (() => {
+      window.removeEventListener('resize', updateDimension);
+    })
+  }, [screenSize])
 
   const showLoader = () => {
     setLoader(true)
@@ -52,10 +68,6 @@ function App() {
     setSpinner(false)
   }
 
-  const closeModal = () => {
-    navigate("/")
-  }
-
   const showToast = (message: string, type: string) => {
     setToast({ message, type })
   }
@@ -63,7 +75,8 @@ function App() {
   const handleRemoveToast = () => setToast(null)
 
   return <>
-    <Context.Provider value={{ loaderOn: showLoader, loaderOff: hideLoader, navigate, toast: showToast, spinnerOn: showSpinner, spinnerOff: hideSpinner }}>
+    {screenSize.width > 678 && <InstallationDesktopPage />}
+    {screenSize.width <= 678 && <Context.Provider value={{ loaderOn: showLoader, loaderOff: hideLoader, navigate, toast: showToast, spinnerOn: showSpinner, spinnerOff: hideSpinner }}>
       <Routes>
         <Route path='/' element={isUserLoggedIn() ? <Home /> : <Navigate to="/login" />} />
         <Route path='/login' element={isUserLoggedIn() ? <Navigate to="/" /> : <Login />} />
@@ -76,10 +89,10 @@ function App() {
         <Route path='/search' element={isUserLoggedIn() ? <Search /> : <Navigate to="/login" />} />
         <Route path='/favouriteChefs' element={isUserLoggedIn() ? <FavouriteChefs /> : <Navigate to="/login" />} />
       </Routes>
-      <PWAPrompt promptOnVisit={1} timesToShow={3} copyClosePrompt="Close" permanentlyHideOnDismiss={false} />
+      {/* <PWAPrompt promptOnVisit={1} timesToShow={3} copyClosePrompt="Close" permanentlyHideOnDismiss={false} /> */}
       {loader && <Loader />}
       {toast && <Toast message={toast.message} type={toast.type} endAnimation={handleRemoveToast} />}
-    </Context.Provider>
+    </Context.Provider>}
   </>
 
 }

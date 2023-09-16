@@ -61,6 +61,12 @@ body {
   height: 100%;
 }
 
+@media (min-width: 678px) {
+  .root {
+    padding-bottom: 0;
+  }
+}
+
 .page-first-level {
   display: flex;
   flex-direction: column;
@@ -161,6 +167,13 @@ body {
   font-family: "Inter";
   font-size: 12px;
   font-weight: 600;
+  margin: 0;
+}
+
+.big-text-bold {
+  font-family: "Inter";
+  font-size: 80px;
+  font-weight: 800;
   margin: 0;
 }
 
