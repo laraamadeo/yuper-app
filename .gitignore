@@ -12,8 +12,6 @@ dist
 dist-ssr
 *.local
 .env
-app/.env
-api/.env
 
 app/node_modules
 api/node_modules
